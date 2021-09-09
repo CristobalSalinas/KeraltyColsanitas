@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colsanitas</title>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap 3 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Material design lite -->
+    <link rel="stylesheet" href="/minified/css/mdlite.min.css" />
+    <script defer src="/minified/js/mdlite.min.js"></script>
+
+    <!-- MUI -->
+    <link rel="stylesheet" href="/minified/css/mui.min.css" />
+    <script defer src="/minified/js/mui.min.js"></script>
+
+    <!-- Hind font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind"
+      rel="stylesheet"
+    />
+
+    <!-- Icons material design -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+   
+    <!-- Font awesome icon -->
+    <script src="https://kit.fontawesome.com/d818d9ea6b.js" crossorigin="anonymous"></script>
+
+    <!-- Font awesome icons -->
+    <script src="https://use.fontawesome.com/c2523dc95f.js"></script>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="/css/main_estilos.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/slider.css" />
+    <link rel="stylesheet" href="/css/cards.css" />
+    <link rel="stylesheet" href="/css/horizontal.css" />
+    <link rel="stylesheet" href="/css/banner.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-default" id="mini-navbar">
+        <div class="container">
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        <span>Donde estamos</span>
+                      </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                        <span>Canales de atención</span>
+                    </a>
+                </li>
+              <li>
+                <div>
+                  <form action="#" style="height: 10px; margin-top: -6px">
+                    <div
+                      class="
+                        mdl-textfield mdl-js-textfield
+                        mdl-textfield--expandable
+                      "
+                    >
+                      <label
+                        class="mdl-button mdl-js-button mdl-button--icon"
+                        for="sample6"
+                      >
+                        <i class="material-icons">search</i>
+                      </label>
+                      <div class="mdl-textfield__expandable-holder">
+                        <input
+                          class="mdl-textfield__input"
+                          type="text"
+                          id="sample6"
+                        />
+                        <label
+                          class="mdl-textfield__label"
+                          for="sample-expandable"
+                          >Expandable Input</label
+                        >
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <!-- navbar-fixed-top  -->
+    <nav class="navbar navbar-default" id="navbar-pincipal">
+  
+        <div class="container">
+            <div class="navbar-header">
+                <button data-toggle="collapse-side" data-target=".side-collapse" type="button" class="navbar-toggle">
+                  <span class="sr-only">Toggle navigation</span>  
+                  <span class="icon-bar"></span>  
+                  <span class="icon-bar"></span>  
+                  <span class="icon-bar"></span> 
+                </button> 
+                <a href="/">
+                  <img
+                    alt="logo"
+                    id="logo-principal"
+                    height="50"
+                    src="./archivos/logo.png"
+                    width="50"
+                  />
+                </a>
+            </div>
+      
+            <div class="navbar-default side-collapse in">
+                <nav role="navigation" class="navbar-collapse" id="navbar_principal">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li>
+                            <a href="#">Link</a> 
+                        </li>
+                        <li class="active">
+                            <a href="#">Link</a> 
+                        </li>
+                        <li>
+                            <a href="#">Link</a> 
+                        </li>
+
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <i class="fa fa-chevron-down"></i></a>
+      
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Link</a> 
+                                </li>
+                                <li><a href="#">Link</a> 
+                                </li>
+                                <li><a href="#">Link</a> 
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Link</a> 
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Link</a> 
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button id="oficina_virtual" class="oficina_virtual_botton mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                              Oficina virtual
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="container mini-links">
+                      <hr />
+                      <ul class="nav navbar-nav">
+                        <li>
+                          <a href="paginas/canales-de-atencion.html">
+                            <span class="glyphicon glyphicon-earphone"></span>
+                            <span>Canales de atención</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </nav>
+
+    <div
+      class="carousel fade-carousel slide"
+      data-ride="carousel"
+      data-interval="4000"
+      id="bs-carousel"
+    >
+      <!-- Overlay -->
+      <div class="overlay"></div>
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bs-carousel" data-slide-to="1"></li>
+        <li data-target="#bs-carousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item slides active">
+          <div
+            class="slide-1"
+            style="background: linear-gradient(90deg, rgba(38,39,116,1) 21%, rgba(0,212,255,0) 89%),
+            url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818) no-repeat center center / cover;"
+          ></div>
+          <div class="hero">
+            <hgroup>
+              <h1>Conoce la nueva compañia aseguradora con todo el respaldo del grupo Keralty</h1>
+            </hgroup>
+
+            <button class="btn btn-hero btn-lg" role="button">
+              Conoce más
+            </button>
+          </div>
+        </div>
+        <div class="item slides">
+          <div
+            class="slide-2"
+            style="background: linear-gradient(90deg, rgba(38,39,116,1) 21%, rgba(0,212,255,0) 89%),
+            url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818) no-repeat center center / cover;"
+          ></div>
+          <div class="hero">
+            <hgroup>
+              <h1>Conoce la nueva compañia aseguradora con todo el respaldo del grupo Keralty</h1>
+            </hgroup>
+            <button class="btn btn-hero btn-lg" role="button">
+              Conoce más
+            </button>
+          </div>
+        </div>
+        <div class="item slides">
+          <div
+            class="slide-3"
+            style="background: linear-gradient(90deg, rgba(38,39,116,1) 21%, rgba(0,212,255,0) 89%),
+            url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818) no-repeat center center / cover;"
+          ></div>
+          <div class="hero">
+            <hgroup>
+              <h1>Conoce la nueva compañia aseguradora con todo el respaldo del grupo Keralty</h1>
+            </hgroup>
+            <button class="btn btn-hero btn-lg" role="button">
+              Conoce más
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="espaciador-mediano"></div>
+      <div style="text-align: center">
+        <h1>Nuestras prestaciones</h1>
+      </div>
+      <div class="espaciador-pequeno"></div>
+    </div>
+
+    <div class="container">
+      <div class="card__wrap--outer">
+        <div class="card__wrap--inner-50">
+          <div class="card">
+            <div class="card__item">
+
+              <div style="display: flex;">
+                <img 
+                src="archivos/cardiogram.png"
+                height="70"
+                width="70"/>
+                <h2 style="margin-left: 17px;">ARL</h2>
+              </div>
+
+            </div>
+            <div class="card__item flexible">
+              <p style="color: #686868;">
+                Protegemos a tus trabajadores mediante la prevencion de riesgos
+                y su atencion integral en salud
+              </p>
+            </div>
+            <div class="card__footer">
+              <a
+                href="#"
+                class="mdl-button mdl-js-button mdl-js-ripple-effect"
+                style="color: #363884;text-decoration: none;"
+              >
+                <b>Más Información</b>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__wrap--inner-50">
+          <div class="card">
+            <div class="card__item">
+           
+              <div style="display: flex;">
+                <img 
+                src="archivos/plant.png"
+                height="70"
+                width="70"/>
+                <h2 style="margin-left: 17px;">Seguros</h2>
+              </div>
+
+            </div>
+            <div class="card__item flexible">
+              <p style="color: #686868;">
+                Estamos contigo y los tuyos para que disfruten la vida con total
+                tranquilidad. Cotiza y compra tu seguro en linea de manera
+                secilla y rapida.
+              </p>
+            </div>
+            <div class="card__footer">
+              <a
+                href="#"
+                class="mdl-button mdl-js-button mdl-js-ripple-effect"
+                style="color: #363884;text-decoration: none;"
+              >
+                <b>Más Información</b>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="espaciador-mediano"></div>
+
+    </div>
+
+    <div class="novedades_section">
+
+      <div class="container">
+        <div class="espaciador-mediano"></div>
+        <div style="text-align: center">
+          <h1>Conoce nuestras novedades</h1>
+        </div>
+        <div class="espaciador-pequeno"></div>
+      </div>
+
+      <div class="container-fluid" class="novedades-cards">
+        <div class="cont-normal-novedades">
+          <div class="card__wrap--outer">
+            <div class="card__wrap--inner-30">
+              <div class="card">
+                <div
+                  class="imagen-fondo"
+                  style="
+                    background: url(https://images.unsplash.com/photo-1501516069922-a9982bd6f3bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)
+                      center / cover;
+                    height: 200px;
+                  "
+                ></div>
+                <div class="card__item flexible">
+                  <p style="color: #686868;">
+                    Protegemos a tus trabajadores mediante la prevencion de riesgos
+                    y su atencion integral en salud
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <a
+                    href="#"
+                    class="mdl-button mdl-js-button mdl-js-ripple-effect"
+                    style="color: #363884;text-decoration: none;"
+                  >
+                    <b>Más Información</b>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card__wrap--inner-30">
+              <div class="card">
+                <div
+                  class="imagen-fondo"
+                  style="
+                    background: url(https://images.unsplash.com/photo-1501516069922-a9982bd6f3bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)
+                      center / cover;
+                    height: 200px;
+                  "
+                ></div>
+                <div class="card__item flexible">
+                  <p style="color: #686868;">
+                    Protegemos a tus trabajadores mediante la prevencion de riesgos
+                    y su atencion integral en salud
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <a
+                    href="#"
+                    class="mdl-button mdl-js-button mdl-js-ripple-effect"
+                    style="color: #363884;text-decoration: none;"
+                  >
+                    <b>Más Información</b>
+                  </a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card__wrap--inner-30">
+              <div class="card">
+                <div
+                  class="imagen-fondo"
+                  style="
+                    background: url(https://images.unsplash.com/photo-1501516069922-a9982bd6f3bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)
+                      center / cover;
+                    height: 200px;
+                  "
+                ></div>
+                <div class="card__item flexible">
+                  <p style="color: #686868;">
+                    Protegemos a tus trabajadores mediante la prevencion de riesgos
+                    y su atencion integral en salud
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <a
+                    href="#"
+                    class="mdl-button mdl-js-button mdl-js-ripple-effect"
+                    style="color: #363884;text-decoration: none;"
+                  >
+                    <b>Más Información</b>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cont-mobil-novedades">
+          <div class="scrolling-wrapper">
+            <div class="carta">
+              <div class="card__wrap--inner-30">
+                <div class="card">
+                  <div
+                    style="
+                      background: url(https://images.unsplash.com/photo-1501516069922-a9982bd6f3bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)
+                        center / cover;
+                      height: 200px;
+                    "
+                  ></div>
+                  <div class="card__item flexible" style="white-space: initial">
+                    <p style="color: #686868;">
+                      Protegemos a tus trabajadores mediante la prevencion de riesgos
+                      y su atencion integral en salud
+                    </p>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                    href="#"
+                    class="mdl-button mdl-js-button mdl-js-ripple-effect"
+                    style="color: #363884;text-decoration: none;"
+                  >
+                    <b>Más Información</b>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carta">
+              <div class="card__wrap--inner-30">
+                <div class="card">
+                  <div
+                    style="
+                      background: url(https://images.unsplash.com/photo-1501516069922-a9982bd6f3bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)
+                        center / cover;
+                      height: 200px;
+                    "
+                  ></div>
+                  <div class="card__item flexible" style="white-space: initial">
+                    <p style="color: #686868;">
+                      Protegemos a tus trabajadores mediante la prevencion de riesgos
+                      y su atencion integral en salud
+                    </p>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="#"
+                      class="mdl-button mdl-js-button mdl-js-ripple-effect"
+                      style="color: #363884;text-decoration: none;"
+                    >
+                      <b>Más Información</b>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carta">
+              <div class="card__wrap--inner-30">
+                <div class="card">
+                  <div
+                    style="
+                      background: url(https://images.unsplash.com/photo-1501516069922-a9982bd6f3bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)
+                        center / cover;
+                      height: 200px;
+                    "
+                  ></div>
+                  <div class="card__item flexible" style="white-space: initial">
+                    <p style="color: #686868;">
+                      Protegemos a tus trabajadores mediante la prevencion de riesgos
+                      y su atencion integral en salud
+                    </p>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="#"
+                      class="mdl-button mdl-js-button mdl-js-ripple-effect"
+                      style="color: #363884;text-decoration: none;"
+                    >
+                      <b>Más Información</b>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+
+      <div class="espaciador-mediano"></div>
+
+    </div>
+
+    <!-- Colsanitas Seguros -->
+    <div class="container">
+      <div class="espaciador-mediano"></div>
+      <div style="text-align: center">
+        <h1>Por que elegir Keralty Colsanitas</h1>
+      </div>
+      <div class="espaciador-mediano"></div>
+    </div>
+
+    <div class="container">
+      <div class="row aligned-row">
+        <div class="col-xs-6 col-sm-6 col-md-4 item mb-3">
+          <div class="eleccion-card">
+            <div style="text-align: center">
+              <span
+                class="glyphicon glyphicon-briefcase iconos-pequeno"
+              ></span>
+              <h2><b>7 Clínicas</b></h2>
+              <h3>Propias</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 item mb-3">
+          <div class="eleccion-card">
+            <div style="text-align: center">
+              <span
+                class="glyphicon glyphicon-heart-empty iconos-pequeno"
+              ></span>
+              <h2><b>+8000</b></h2>
+              <h3>Prestadores en la red médica</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 item mb-3">
+          <div class="eleccion-card">
+            <div style="text-align: center">
+              <span class="fa fa-hospital-o iconos-pequeno"></span>
+              <h2><b>30</b></h2>
+              <h3>Centros médicos propios</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="espaciador-mediano"></div>
+
+    </div>
+
+    <!-- servicio al cliente -->
+    <div class="servicios_sections">
+      <div class="container">
+        <div class="espaciador-pequeno"></div>
+        <div style="text-align: center">
+          <h2><b>Servicio al cliente</b></h2>
+          <div class="espaciador-pequeno"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            tincidunt semper nulla
+          </p>
+          <div class="espaciador-pequeno"></div>
+        </div>
+        <div class="espaciador-pequeno"></div>
+      </div>
+
+      <div class="container">
+        <div class="row aligned-row">
+          <div class="col-xs-12 col-sm-12 col-md-4 item mb-3">
+            <div class="carta-simple">
+              <a href="#"><h4>Defensor del Consumidor Financiero</h4></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 item mb-3">
+            <div class="carta-simple">
+              <a href="#"><h4>Felicitaciones, quejas y reclamos</h4></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 item mb-3">
+            <div class="carta-simple">
+              <a href="#"><h4>Educación financiera</h4></a>
+            </div>
+          </div>
+        </div>
+        <div class="row aligned-row">
+          <div class="col-xs-12 col-sm-12 col-md-4 item mb-3">
+            <div class="carta-simple">
+              <a href="#"><h4>Tratamientos de datos Personales</h4></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 item mb-3">
+            <div class="carta-simple">
+              <a href="#"><h4>Donde estamos</h4></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 item mb-3">
+            <div class="carta-simple">
+              <a href="#"><h4>Línea Ética</h4></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="espaciador-mediano"></div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 col-xl-6">
+            <div class="banner-espaciador"></div>
+            <h1>Bienestar Colsanitas</h1>
+            <p class="banner-text mt-5">
+              Texto de la información relevante para esta sección del sitio
+              Keralty Colsanitas
+            </p>
+            <a
+              href="#"
+              class="
+                mdl-button mdl-js-button
+                mdl-button--raised
+                mdl-js-ripple-effect
+                mdl-button--accent
+                mt-4
+                botton_banner
+              "
+              >Ir al sitio</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="fondo-footer">
+      <div class="espaciador-grande"></div>
+
+      <div class="container mb-4">
+
+        <div class="row">
+          <div class="col-12 col-md-3 col-xl-6 mb-3 aliniacion_central">
+            <img src="archivos/logo.png" height="60" width="60" />
+          </div>
+          <div class="col-12 col-md-3 col-xl-6 mb-3 aliniacion_central">
+            <p style="color: white;"><span class="glyphicon glyphicon-earphone"></span> Bogotá 487 1920</p>
+          </div>
+          <div class="col-12 col-md-3 col-xl-6 mb-3 aliniacion_central">
+            <p style="color: white;"><span class="glyphicon glyphicon-earphone"></span> Resto del país 01 8000 979020</p>
+          </div>
+          <div class="col-12 col-md-3 col-xl-6 mb-3">
+            <div class="logout aliniacion_central">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-12 col-md-3 col-xl-6">
+            <div style="text-align: left">
+              <div>
+                <div class="espaciado colapsable">
+                  <h3 class="footer-title"><b>Nosotros</b></h3>
+                  <div class="flecha abajo"></div>
+                </div>
+                <div class="contenido-links">
+                  <div class="mb-2 mt-3">
+                    <a href="#" class="footer-links">Keralty</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Seguros Colsanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Saluds ocupacional</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Colsanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">EPS Sanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Clínica Colsanitas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-xl-6">
+            <div style="text-align: left">
+              <div>
+                <div class="espaciado colapsable">
+                  <h3 class="footer-title"><b>Servicio al cliente</b></h3>
+                  <div class="flecha abajo"></div>
+                </div>
+                <div class="contenido-links">
+                  <div class="mb-2 mt-3">
+                    <a href="#" class="footer-links">Keralty</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Seguros Colsanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Saluds ocupacional</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Colsanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">EPS Sanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Clínica Colsanitas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-xl-6">
+            <div style="text-align: left">
+              <div>
+                <div class="espaciado colapsable">
+                  <h3 class="footer-title"><b>Normatividad</b></h3>
+                  <div class="flecha abajo"></div>
+                </div>
+                <div class="contenido-links">
+                  <div class="mb-2 mt-3">
+                    <a href="#" class="footer-links">Keralty</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Seguros Colsanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Saluds ocupacional</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Colsanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">EPS Sanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Clínica Colsanitas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-xl-6">
+            <div style="text-align: left">
+              <div>
+                <div class="espaciado colapsable">
+                  <h3 class="footer-title"><b>Otros sitios</b></h3>
+                  <div class="flecha abajo"></div>
+                </div>
+                <div class="contenido-links">
+                  <div class="mb-2 mt-3">
+                    <a href="#" class="footer-links">Keralty</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Seguros Colsanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Saluds ocupacional</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Colsanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">EPS Sanitas</a>
+                  </div>
+                  <div class="mb-2">
+                    <a href="#" class="footer-links">Clínica Colsanitas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="espaciador-pequeno"></div>
+    </div>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+
+  </body>
+</html>

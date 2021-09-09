@@ -1,0 +1,304 @@
+.card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*Primera card*/
+.carta-principal-simple{
+    height: 100% !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.carta-principal-simple>div{
+    height: 100%;
+    line-height: 60px;
+}
+
+.carta-principal-simple>div>h4{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+
+/*Nuestras prestacions cards*/
+
+.card__wrap--outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card__footer {
+    padding-bottom: 10px;
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+.card__footer-borderless{
+    border-top: none !important;
+  }
+
+.carta1 {
+    height: 100% !important;
+    background-color: #e3f0bf ;
+    padding: 20px 50px 20px 50px;/*Arriba, derecha, abajo, izquierda*/
+}
+
+.contenedor img {
+    height: 70px;
+    width: 70px;
+}
+
+@media (max-width: 481px) {
+    .contenedor img{
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .contenedor h1{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width: 480px) {
+    .contenedor {
+        display: table;
+        width: 100%;
+    }
+
+    .contenedor .texto {
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .contenedor span {
+        display: block;
+        float: right;
+    }
+    
+    .contenedor .clear {
+        clear: both;
+    }
+
+    .contenedor img {
+        display: block;
+        float: right;
+    }
+    
+}
+
+
+/*****Novedades*****/
+.novedades_section{
+    background: #f6f6fd;
+}
+
+/*****Servicios*****/
+.servicios_sections{
+    background: #f6f6fd;
+}
+
+
+/*****cards padres*****/
+.card__wrap--inner-30 {
+    padding: 12px;
+}
+
+.card__wrap--inner-30 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card__wrap--inner-50 {
+    padding: 12px;
+}
+
+.card__wrap--inner-50 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .card__wrap--inner-30 { 
+        width: 33.3%
+    }
+
+    .card__wrap--inner-50 { 
+        width: 50%
+    }
+}
+
+@media (min-width: 1024px) {
+    .card__wrap--inner-30 { 
+        width: 33.3%
+    }
+    .card__wrap--inner-50 { 
+        width: 50%
+    }
+}
+
+
+
+/* Cartas afiliacion */
+.afiliacion-card-outer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.afiliacion-card-inner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 12px;
+}
+
+
+@media (min-width: 480px) {
+
+    .afiliacion-card-inner  { 
+            width: 100%
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .afiliacion-card-inner { 
+            width: 33.3%
+    }
+}
+
+.afiliacion-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.afiliacion-card-item {
+    padding: 12px 18px 12px 18px;
+}
+
+.afiliacion-card-footer {
+    border-top: 1px solid #dedede;
+    padding: 18px;
+    overflow: hidden;
+}
+
+
+.gray-background{
+    background-color: #e1e9e9ce;
+}
+
+/*Eleccion cards*/
+
+.eleccion-card{
+    padding-top: 5px;
+    padding-bottom:15px;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+/*Carta simple*/
+.carta-simple{
+    height: 100% !important;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.carta-simple h4{
+    color: #2a2c7d;
+    font-size: 24px;
+}
+
+.carta-simple p{
+    color: #000000;
+    font-size: 17px;
+}
+
+@media (max-width: 480px) {
+    .carta-simple{
+        border-style: solid;
+        border-color: gray;
+    }
+}
+
+
+/*card 2*/
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-2-fondogris{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding-top: 5px;
+    padding-bottom:15px;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.card-2-fondogris span{
+    display: flex;
+    justify-content: center;
+}
+
+.card-2-fondogris h3{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Card image */
+@media (max-width: 766px) {
+    .card-image-section{
+        display: none;
+    }
+
+    .card-image{
+        
+    }
+}
+
+
+/*Canales card*/
+.canales-card{
+    padding: 5px 15px 15px 15px;
+    border-style: solid;
+    border-color: gray;
+    height: 100%;
+}
+
+
+
